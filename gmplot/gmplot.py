@@ -211,10 +211,10 @@ class GoogleMapPlotter(object):
 
     def _process_ground_overlay_image_bounds(self, bounds_dict):
         bounds_string = 'var imageBounds = {'
-        bounds_string += "north:  %.4f,\n" % bounds_dict['north']
-        bounds_string += "south:  %.4f,\n" % bounds_dict['south']
-        bounds_string += "east:  %.4f,\n" % bounds_dict['east']
-        bounds_string += "west:  %.4f};\n" % bounds_dict['west']
+        bounds_string += "north:  %f,\n" % bounds_dict['north']
+        bounds_string += "south:  %f,\n" % bounds_dict['south']
+        bounds_string += "east:  %f,\n" % bounds_dict['east']
+        bounds_string += "west:  %f};\n" % bounds_dict['west']
 
         return bounds_string
 
